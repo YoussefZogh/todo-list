@@ -1,0 +1,18 @@
+{
+    "todos": [
+      {
+        "id": 1,
+        "title": "Apprendre Angular",
+        "done": false,
+        "date": "2024-11-30T00:00:00.000Z",
+        "description": "Suivre les bases de Angular."
+      },
+      {
+        "id": 2,
+        "title": "Créer une application Todo",
+        "done": false,
+        "date": "2024-12-01T00:00:00.000Z",
+        "description": "Utiliser Angular pour créer une app complète."
+      }
+    ]
+  }
