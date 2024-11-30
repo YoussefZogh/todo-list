@@ -12,13 +12,13 @@ export class TodoService {
   constructor(private http: HttpClient) {}
 
   // Récupérer tous les todos
-  getTodos(): Observable<Todo[]> {
+  getTodoList(): Observable<Todo[]> {
     return this.http.get<Todo[]>(this.apiUrl);
   }
 
-  // Ajouter un todo
-  addTodo(todo: Todo): Observable<Todo> {
-    return this.http.post<Todo>(this.apiUrl, todo);
+  // Récupérer un todo par ID
+  getTodoById(id: number): Observable<Todo> {
+    return this.http.get<Todo>(`${this.apiUrl}/${id}`);
   }
 
   // Supprimer un todo
